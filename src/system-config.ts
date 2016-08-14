@@ -42,7 +42,8 @@ const barrels: string[] = [
     // App specific barrels.
     'app',
     'app/shared',
-    /** @cli-barrel */
+    'app/login-form',
+  /** @cli-barrel */
 ];
 
 const cliSystemConfigPackages: any = {};
