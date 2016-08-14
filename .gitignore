@@ -14,6 +14,14 @@
 .classpath
 *.launch
 .settings/
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
 
 # misc
 /.sass-cache
@@ -28,6 +36,7 @@ testem.log
 /e2e/*.js
 /e2e/*.map
 
-#System Files
+# System Files
 .DS_Store
 Thumbs.db
+
