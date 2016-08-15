@@ -1,0 +1,60 @@
+/* ***************************** */
+/* Basic Setup */
+/* ***************************** */
+html, body, * { font-family: 'Roboto', sans-serif !important; color: #fff; }
+body {
+    background: #1d212c url(../images/background.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+
+
+/* ***************************** */
+/* Forms Data */
+/* ***************************** */
+input[type="text"], input[type="password"] {
+    background-color: #1a1e28;
+    border: 0;
+    color: #fff;
+}
+input, 
+input:focus {
+    border: none;
+    border-color: Transparent !important;
+    border-radius: 0;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+input:focus {
+    border-bottom: 1px solid #fff !important;
+}
+
+
+
+
+
+button {
+    padding: 10px 50px;
+    font-weight: bold;
+    background-color: #00bff3;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+}
+
+
+
+/* ***************************** */
+/* Utility Classes */
+/* ***************************** */
+.m-t-0 { margin-top: 0 !important; }
+.m-t-5 { margin-top: 5px !important; }
+.m-t-10 { margin-top: 10px !important; }
+.m-t-15 { margin-top: 15px !important; }
+.m-t-20 { margin-top: 20px !important; }
+.m-t-25 { margin-top: 25px !important; }
+.m-t-30 { margin-top: 30px !important; }
