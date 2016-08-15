@@ -16,6 +16,12 @@ input[type="text"], input[type="password"] {
     background-color: #1a1e28;
     border: 0;
     color: #fff;
+    display: inline-block;
+
+    -webkit-transition : border 750ms ease-in-out;
+    -moz-transition : border 750ms ease-in-out;
+    -o-transition : border 750ms ease-in-out;
+    transition : border 750ms ease-in-out;
 }
 input, 
 input:focus {
@@ -32,9 +38,11 @@ input:focus {
 input:focus {
     border-bottom: 1px solid #fff !important;
 }
-
-
-
+/* Placeholder text (i.e. for input fields) */
+::-webkit-input-placeholder { color: #68788c !important; }
+:-moz-placeholder           { color: #68788c !important; }
+::-moz-placeholder          { color: #68788c !important; }
+:-ms-input-placeholder      { color: #68788c !important; }
 
 
 button {
@@ -58,3 +66,4 @@ button {
 .m-t-20 { margin-top: 20px !important; }
 .m-t-25 { margin-top: 25px !important; }
 .m-t-30 { margin-top: 30px !important; }
+ 
