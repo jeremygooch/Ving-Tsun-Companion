@@ -1,5 +1,8 @@
 <form [(formGroup)]="loginForm" (submit)="doLogin($event)">
     <input type="text" class="form-control" formControlName="email" placeholder="Email Address">
+    <small [hidden]="loginForm.controls.email.valid || (loginForm.controls.email.pristine && !submitted)">
+        Name is required (minimum 5 characters).
+    </small>
     <input type="password" class="form-control m-t-20" formControlName="password" placeholder="Password">
     <button type="submit">Begin</button>
 </form>

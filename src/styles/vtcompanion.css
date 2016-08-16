@@ -1,10 +1,15 @@
 /* ***************************** */
 /* Basic Setup */
 /* ***************************** */
-html, body, * { font-family: 'Roboto', sans-serif !important; color: #fff; }
+html, body, *:not(.glyphicon) { font-family: 'Roboto', sans-serif !important; color: #fff; }
 body {
     background: #1d212c url(../images/background.jpg) center top no-repeat;
     background-size: cover;
+}
+
+/* Icons Properties*/
+.glyphicon {
+    font-size: 50px;
 }
 
 
@@ -14,6 +19,7 @@ body {
 /* ***************************** */
 input[type="text"], input[type="password"] {
     background-color: #1a1e28;
+    border-radius: 0;
     border: 0;
     color: #fff;
     display: inline-block;
@@ -23,11 +29,12 @@ input[type="text"], input[type="password"] {
     -o-transition : border 750ms ease-in-out;
     transition : border 750ms ease-in-out;
 }
+button,
+button:focus,
 input, 
 input:focus {
     border: none;
     border-color: Transparent !important;
-    border-radius: 0;
     overflow: auto;
     outline: none;
 
@@ -56,6 +63,37 @@ button {
 
 
 
+
+/* ***************************** */
+/* Effects Animation */
+/* ***************************** */
+.glyphicon-spin {
+    -webkit-animation: spin 2000ms infinite linear;
+    animation: spin 2000ms infinite linear;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+
+
 /* ***************************** */
 /* Utility Classes */
 /* ***************************** */
@@ -66,4 +104,22 @@ button {
 .m-t-20 { margin-top: 20px !important; }
 .m-t-25 { margin-top: 25px !important; }
 .m-t-30 { margin-top: 30px !important; }
- 
+
+.o-0 { opacity: 0.0; }
+.o-10 { opacity: 0.1; }
+.o-20 { opacity: 0.2; }
+.o-30 { opacity: 0.3; }
+.o-40 { opacity: 0.4; }
+.o-50 { opacity: 0.5; }
+.o-60 { opacity: 0.6; }
+.o-70 { opacity: 0.7; }
+.o-80 { opacity: 0.8; }
+.o-90 { opacity: 0.9; }
+.o-100 { opacity: 1.0; }
+
+.app-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+}

@@ -12,13 +12,14 @@ import { REACTIVE_FORM_DIRECTIVES, FormGroup, FormControl, FormBuilder } from '@
 })
 export class LoginFormComponent implements OnInit {
     public loginForm: FormGroup;
+    public submitted: boolean;
 
     constructor(private _fb: FormBuilder) { }
 
     ngOnInit() {
         this.loginForm = this._fb.group({
-            email: ['', []],
-            password: ['', []]
+            email: ['', [<any>Validators.required]],
+            password: ['', [<any>Validators.required]]
         });
     }
 
