@@ -5,5 +5,8 @@
     <div class="form-group" [ngClass]="{ 'has-error':!loginForm.controls.password.valid && submitted }">
         <input type="password" class="form-control m-t-20" formControlName="password" placeholder="Password">
     </div>
+    <div *ngIf="invalidCreds" class="alert alert-danger m-b--30">
+        Invalid credentials. Please double check info and try again.
+    </div>
     <button type="submit">Begin</button>
 </form>
